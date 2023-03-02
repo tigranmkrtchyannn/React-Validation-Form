@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+ 
+}
+.formBox {
+  box-shadow: 5px 5px 40px 5px gray;
+  width: 100%;
+ padding:50px 10px;
+ margin:50px
+
+}
+.formik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: rgb(231, 4, 167);
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h1::after,
+h1::before {
+  content: "";
+  width: 200px;
+  height: 4px;
+  background-color: rgb(231, 4, 167);
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5rem;
+}
+label {
+  color: white;
+  display: block;
+  margin: 5px 0;
+  font-weight: 700;
+}
+ input {
+  border-radius: 5px;
+  height: 1.5rem;
+  width: 12rem;
+}
+
+.fullName {
+  display: flex;
+  justify-content: space-between;
+  gap:60px;
+}
+
+.validInput {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  left: 15rem;
+  line-height:4rem;
+}
+.validInput input {
+  width: 450px;
+  margin-top: -1rem;
+  height: 1.5rem;
+}
+ input.input-errors,
+ select.input-errors{
+  border-color:red;
+  color:red
+ }
+ .error{
+  color:red;
+  width:12rem;
+  font-size: 14px;
+  line-height:1rem;
+ }
+ 
+ .signBtn{
+  background-color: rgb(231, 4, 167);
+  color: white;
+  width: 12rem;
+  height:2rem;
+  text-align: center;
+  font-weight: 500;
+  border-radius:50px;
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase;
+ }
+ p{
+  color:white;
+  font-weight:500;
+  margin:5px 0;
+  text-transform: uppercase;
+  font-size:15px;
+ }
+ .gBtn{
+ background-color: white;
+ color: black;
+  width: 12rem;
+  height:2rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius:50px;
+  font-size: 12px;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+  padding:5px
+  
+
+ }
+ .icon {
+  width:20px;
+  height:20px;
+  
+ }
+@media  only screen and (max-width:750px) {
+h1::after,
+h1::before {
+  content: "";
+  width:50px;
+}
+}
