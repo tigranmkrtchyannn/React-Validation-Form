@@ -102,13 +102,13 @@ function BasicForm() {
                     <input
                         id="password"
                         value={values.password}
-                        type="text"
+                        type="password"
                         placeholder="  Create a password"
                         onChange={handleChange}
                         onBlur={handleBlur}
                         className={errors.password&&touched.password  ? "input-errors" : ""}
                     />
-                      {errors.password&&touched.password && <p className="error">{errors.password}</p> }
+                      {errors.password&&touched.password && <p className="password error">{errors.password}</p> }
                 </div>
                  <Checkbox />
                 <button type='submit' className="signBtn" disabled={isSubmitting}>Sign Up</button>

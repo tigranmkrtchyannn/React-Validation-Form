@@ -50,8 +50,15 @@ label {
 }
  input {
   border-radius: 5px;
-  height: 1.5rem;
+  height: 2rem;
   width: 12rem;
+  border: none;
+  outline: none;
+  padding:12px 7px;
+  margin: 8px 0;
+  background-color: azure;
+  
+
 }
 
 .fullName {
@@ -70,18 +77,22 @@ label {
 .validInput input {
   width: 450px;
   margin-top: -1rem;
-  height: 1.5rem;
+  height: 2rem;
 }
  input.input-errors,
  select.input-errors{
   border-color:red;
   color:red
+
  }
  .error{
   color:red;
   width:12rem;
-  font-size: 14px;
+  font-size: 10px;
   line-height:1rem;
+ }
+ .password{
+width:450px
  }
  
  .signBtn{
